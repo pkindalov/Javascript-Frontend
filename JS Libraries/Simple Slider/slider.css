@@ -1,0 +1,67 @@
+.sliderContainer{
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    width: 700px;
+    height: 130px;
+}
+
+.buttonPrev{
+    /*border: 1px solid red;*/
+    width: 100px;
+    height: 130px;
+    text-align: center;
+    font-size: 85px;
+    color: goldenrod;
+}
+
+
+.buttonPrev a, .buttonNext a{
+    display: block;
+    color: goldenrod;
+}
+
+.buttonPrev a:hover, .buttonNext a:hover{
+    text-decoration: none;
+    color: gold;
+    background-color: goldenrod;
+}
+
+.imagesContainer{
+    /*border: 1px solid red;*/
+    width: 500px;
+    margin: 0 auto;
+    margin-top: -130px;
+    height: 130px;
+}
+
+.imagesContainer img{
+    width: 250px;
+    height: 130px;
+}
+
+.buttonNext{
+    float: right;
+    width: 100px;
+    height: 130px;
+    text-align: center;
+    font-size: 85px;
+    color: goldenrod;
+    margin-top: -130px;
+}
+
+.picBox1, .picBox2{
+    /*border: 1px solid green;*/
+    height: 130px;
+    width: 250px;
+}
+
+.picBox2{
+    clear: right;
+    float: right;
+    margin-top: -130px;
+}
+
+.menu{
+   margin-left: 70px;
+    margin-top: 20px;
+}
