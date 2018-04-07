@@ -1,0 +1,140 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
+
+@mixin customer-img-style(){
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 7px solid lightgrey;
+}
+
+body{
+  font-family: "Lato", sans-serif;
+}
+
+
+header{
+  background-image: linear-gradient(rgba(20,20,20, 0.3), rgba(20,20,20, 0.3)), url("../images/background.jpg");
+  background-size: cover;
+  padding-bottom: 300px;
+
+  .nav-container{
+    display: flex;
+    justify-content: space-around;
+    ul{
+      display: flex;
+      li{
+        list-style-type: none;
+        margin-right: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        a{
+          text-decoration: none;
+          color: white;
+        }
+
+      }
+    }
+  }
+
+  h1,p{
+    color: white;
+    text-align: center;
+  }
+
+  h1{
+    margin-top: 200px;
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+
+}
+
+
+main{
+
+  background: lightgray;
+  padding-top: 30px;
+
+  .destination-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    article{
+      width: 30%;
+      img{
+        width: 100%;
+      }
+      .destination-container{
+        background: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        .destination-name{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  h2,p{
+    text-align: center;
+  }
+
+  p{
+    color: gray;
+  }
+
+  .customers-opinion{
+    background: white;
+    padding-top: 5%;
+    .inner-section{
+      display: flex;
+      article{
+        text-align: center;
+        h4{
+          text-transform: uppercase;
+        }
+        p{
+          width: 90%;
+          font-style: italic;
+        }
+      }
+      img{
+        @include customer-img-style;
+      }
+    }
+  }
+
+
+  footer{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    nav{
+      ul{
+
+        display: flex;
+        li{
+          margin-right: 30px;
+          list-style-type: none;
+          a{
+            color: lightgrey;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .left-footer-container{
+      p{
+
+        margin-left: 30px;
+      }
+    }
+  }
+
+
+}
+
+
